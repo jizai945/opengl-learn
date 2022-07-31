@@ -1,0 +1,6 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/mnt/d/project/git/opengl-learn'
+make: Leaving directory '/mnt/d/project/git/opengl-learn'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+
