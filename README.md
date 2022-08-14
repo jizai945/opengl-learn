@@ -133,7 +133,7 @@ d(i+1)带入F(x,y)中, `y(i+1) + 0.5 - m(x(i) + 1) - b` = `y(i+1) + 0.5 - mx(i) 
 
 
 
-## 8 二维图形变换(平移、旋转、缩放)
+## 8 二维图形变换1(平移、旋转、缩放)
 
 平移:
 
@@ -182,3 +182,306 @@ sx sy为x和y方向的缩放因子
 
 
 
+## 9 二维图形变化2 - 矩阵形式
+
+加法运算:
+
+行和列相等才能相加
+
+$\begin{bmatrix}
+1 & 2 \\
+3 & 4
+\end{bmatrix}$ + $\begin{bmatrix}
+5 & 6 \\
+7 & 8
+\end{bmatrix}$ = $\begin{bmatrix}
+6 & 8 \\
+10 & 12
+\end{bmatrix}$
+
+
+
+乘法运算:
+
+后面的行数要等于前面的列数才能相乘
+
+P = $\begin{bmatrix}
+1 & 2 \\
+3 & 4
+\end{bmatrix}$
+
+T = $\begin{bmatrix}
+5 & 6 \\
+7 & 8
+\end{bmatrix}$
+
+PxT = $\begin{bmatrix}
+1*5+2*7 & 1*6+2*8 \\
+3*5+4*7 & 3*6+4*8
+\end{bmatrix}$ = $\begin{bmatrix}
+19 & 22 \\
+43 & 50
+\end{bmatrix}$
+
+
+
+对于平移:
+
+​	`x· = x + tx`
+
+​	`y· = y + tx`
+
+假设 原来坐标P = $\begin{bmatrix}
+x \\
+y
+\end{bmatrix}$ , 平移后的坐标 P· = $\begin{bmatrix}
+x· \\
+y·
+\end{bmatrix}$, 平移的量T = $\begin{bmatrix}
+tx \\
+ty
+\end{bmatrix}$
+
+矩阵表示 P· = P + T
+
+
+
+对于旋转:
+
++ x· = xcos(θ1) - ysin(θ1)
++ y· = xsin(θ1) + ycos(θ1）
+
+假设 原来坐标P = $\begin{bmatrix}
+x \\
+y
+\end{bmatrix}$ , 旋转后的坐标 P· = $\begin{bmatrix}
+x· \\
+y·
+\end{bmatrix}$, 旋转的量R = $\begin{bmatrix}
+cosθ & -sinθ \\
+sinθ & cosθ
+\end{bmatrix}$
+
+矩阵表示P· = R * P = $\begin{bmatrix}
+xcosθ - ysinθ \\
+ysinθ + ycosθ
+\end{bmatrix}$
+
+
+
+对于缩放:
+
+sx sy为x和y方向的缩放因子
+
+`x1 = x * sx`
+
+`y1 = y * sy`
+
+假设 原来坐标P = $\begin{bmatrix}
+x \\
+y
+\end{bmatrix}$ , 缩放后的坐标 P· = $\begin{bmatrix}
+x· \\
+y·
+\end{bmatrix}$, 缩放的量R = $\begin{bmatrix}
+sx & 0 \\
+0 & sy
+\end{bmatrix}$
+
+矩阵表示为 P· = S * P = $\begin{bmatrix}
+x*sx \\
+y*sy
+\end{bmatrix}$
+
+平移函数:`glTranslatef(tx, ty, tz)`
+
+旋转函数: `glRotatef（rx, ry, rz）`
+
+缩放函数: `glScalf(sx, sy, sz)`
+
+
+
+## 10二维图形变换3 - 齐次坐标下矩阵形式
+
+使用齐次坐标
+
++ 平移 p· = T(tx, ty) P:
+
+  $\begin{bmatrix}
+  x· \\
+  y· \\ 1 \end{bmatrix}$ = $\begin{bmatrix}
+  1 & 0 & tx \\
+  0 & 1 & ty \\ 0 & 0 & 1
+  \end{bmatrix}$ * $\begin{bmatrix}
+  x \\
+  y \\ 1
+  \end{bmatrix}$ = $\begin{bmatrix}
+  x + tx \\
+  y + ty \\ 1
+  \end{bmatrix}$
+
+  
+
++ 旋转 p· = R(θ)*P:
+
+  $\begin{bmatrix}
+  x· \\
+  y· \\ 1 \end{bmatrix}$ = $\begin{bmatrix}
+  cosθ & -sinθ & 0 \\
+  sinθ & cosθ & 0 \\ 0 & 0 & 1
+  \end{bmatrix}$ * $\begin{bmatrix}
+  x \\
+  y \\ 1
+  \end{bmatrix}$ = $\begin{bmatrix}
+  xcosθ -ysinθ \\
+  xsinθ + ycosθ \\ 1
+  \end{bmatrix}$
+
+  
+
++ 缩放 p· = S(sx, sy)*P:
+
+  $\begin{bmatrix}
+  x· \\
+  y· \\ 1 \end{bmatrix}$ = $\begin{bmatrix}
+  sx & 0 & 0 \\
+  0 & sy & 0 \\ 0 & 0 & 1
+  \end{bmatrix}$ * $\begin{bmatrix}
+  x \\
+  y \\ 1
+  \end{bmatrix}$ = $\begin{bmatrix}
+  sx * x \\
+  sy * y \\ 1
+  \end{bmatrix}$
+
+
+
+以上可以统一写成: `p· = M * P` =  $\begin{bmatrix}
+a & b & |& m \\
+c & d & | & n \\-&-&-&-\\ 0 & 0 & | & s
+\end{bmatrix}$ * $\begin{bmatrix}
+x \\
+y \\ 1
+\end{bmatrix}$ 
+
+右上角2 * 1 $\begin{bmatrix}
+m \\
+n \\ 
+\end{bmatrix}$  描述**平移**
+
+左上角2 * 2$\begin{bmatrix}
+a & b \\
+c & d \\ 
+\end{bmatrix}$ 描述**旋转、缩放**
+
+右下角的$\begin{bmatrix}
+s \\
+\end{bmatrix}$ 一般为1， 若不为1则对图形作整体缩放。
+
+
+
+二维复合变换:
+
++ 复合平移
+
+若经过M1、M2变换
+
+P· = M2(M1 * P) = M2 * M1 * P = M * P
+
+假设经过T1、T2变换，T1 = $\begin{bmatrix}
+1 & 0 & tx1 \\
+0 & 1 & ty1 \\ 0 & 0 & 1
+\end{bmatrix}$ , T2 = $\begin{bmatrix}
+1 & 0 & tx2 \\
+0 & 1 & ty2 \\ 0 & 0 & 1
+\end{bmatrix}$
+
+T = T2 * T1 *P = $\begin{bmatrix}
+1 & 0 & tx1 \\
+0 & 1 & ty1 \\ 0 & 0 & 1
+\end{bmatrix}$ * $\begin{bmatrix}
+1 & 0 & tx2 \\
+0 & 1 & ty2 \\ 0 & 0 & 1
+\end{bmatrix}$ * $\begin{bmatrix}
+x \\
+y \\ 1
+\end{bmatrix}$ = 
+
+$\begin{bmatrix}
+1 & 0 & tx1 + tx2 \\
+0 & 1 & ty1 + ty2 \\ 0 & 0 & 1
+\end{bmatrix}$ * $\begin{bmatrix}
+x \\
+y \\ 1
+\end{bmatrix}$
+
+
+
++ 复合旋转
+
+若经过R1、R2旋转
+
+R1 = $\begin{bmatrix}
+cosθ1 & -sinθ1 & 0 \\
+sinθ1 & cosθ1 & 0 \\ 0 & 0 & 1
+\end{bmatrix}$ R2 = $\begin{bmatrix}
+cosθ2 & -sinθ2 & 0 \\
+sinθ2 & cosθ2 & 0 \\ 0 & 0 & 1
+\end{bmatrix}$
+
+P· = R2 * R1 * P = R(θ1 + θ2) * P
+
+ 
+
++ 复合二维缩放
+
+若经过S1、S2缩放
+
+S1 = $\begin{bmatrix}
+Sx1 & 0 & 0 \\
+0 & Sy1 & 0 \\ 0 & 0 & 1
+\end{bmatrix}$ S2 = $\begin{bmatrix}
+ Sx2 & 0 & 0 \\
+0 & Sy2 & 0 \\ 0 & 0 & 1
+\end{bmatrix}$
+
+#### P· = S2 * S1 * P = $\begin{bmatrix}
+ Sx1 * Sx2 & 0 & 0 \\
+0 & Sy1 * Sy2 & 0 \\ 0 & 0 & 1
+\end{bmatrix}$ * $\begin{bmatrix}
+x \\
+y \\ 1
+\end{bmatrix}$
+
+
+
+还可以不同操作的复合
+
+为什么需要复合, 因为比如绕着非原点(Xr, Yr)旋转，那么需要：
+
+1. 先把旋转点平移到坐标中心，T1
+2. 进行旋转之后，R
+3. 然后再平移回来。T2
+
+T1 = $\begin{bmatrix}
+1 & 0 & -Xr \\
+0 & 1 & -Yr \\ 0 & 0 & 1
+\end{bmatrix}$ R = $\begin{bmatrix} 
+cosθ & -sinθ & 0 \\
+sinθ & cosθ & 0 \\ 0 & 0 & 1
+\end{bmatrix}$ T2 = $\begin{bmatrix}
+1 & 0 & -Xr \\
+0 & 1 & -Yr \\ 0 & 0 & 1
+\end{bmatrix}$ 
+
+ =>P· =  T2 * R * T1 * P =  $\begin{bmatrix}
+cosθ  & -sinθ & Xr(1-cosθ) + Yrsinθ \\
+sinθ & cosθ & Yr(1-cosθ) - Xrsinθ \\ 0 & 0 & 1
+\end{bmatrix}$   * $\begin{bmatrix}
+x \\
+y \\ 1
+\end{bmatrix}$
+
+
+
+问题: 矩阵相乘，`M1*M2是否等于 M2*M1????` 如果不相同，那么矩阵变化的顺序不能改变

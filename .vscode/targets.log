@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Aug  4 01:31:00 2022
+# Make data base, printed on Sun Aug 14 21:16:23 2022
 
 # Variables
 
@@ -31,7 +31,7 @@ CURDIR := /mnt/d/project/git/opengl-learn
 # makefile
 SHELL = /bin/sh
 # environment
-VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"1d735750dbb1b9066c7513078396ba0f.zh-cn","_translationsConfigFile":"/home/timo/.vscode-server/data/clp/1d735750dbb1b9066c7513078396ba0f.zh-cn/tcf.json","_cacheRoot":"/home/timo/.vscode-server/data/clp/1d735750dbb1b9066c7513078396ba0f.zh-cn","_resolvedLanguagePackCoreLocation":"/home/timo/.vscode-server/data/clp/1d735750dbb1b9066c7513078396ba0f.zh-cn/3b889b090b5ad5793f524b5d1d39fda662b96a2a","_corruptedFile":"/home/timo/.vscode-server/data/clp/1d735750dbb1b9066c7513078396ba0f.zh-cn/corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"1d735750dbb1b9066c7513078396ba0f.zh-cn","_translationsConfigFile":"/home/timo/.vscode-server/data/clp/1d735750dbb1b9066c7513078396ba0f.zh-cn/tcf.json","_cacheRoot":"/home/timo/.vscode-server/data/clp/1d735750dbb1b9066c7513078396ba0f.zh-cn","_resolvedLanguagePackCoreLocation":"/home/timo/.vscode-server/data/clp/1d735750dbb1b9066c7513078396ba0f.zh-cn/6d9b74a70ca9c7733b29f0456fd8195364076dda","_corruptedFile":"/home/timo/.vscode-server/data/clp/1d735750dbb1b9066c7513078396ba0f.zh-cn/corrupted.info","_languagePackSupport":true}
 # environment
 _ = /mnt/c/Users/73885/AppData/Local/Programs/Microsoft VS Code/bin/code
 # makefile
@@ -45,7 +45,7 @@ VSCODE_CWD = /mnt/c/Users/73885/AppData/Local/Programs/Microsoft VS Code
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /home/timo/.vscode-server/bin/3b889b090b5ad5793f524b5d1d39fda662b96a2a/bin/remote-cli:/home/timo/miniconda3/bin:/home/timo/miniconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python310/Scripts:/mnt/c/Python310:/mnt/c/Program Files (x86)/Razer Chroma SDK/bin:/mnt/c/Program Files/Razer Chroma SDK/bin:/mnt/c/Program Files (x86)/Razer/ChromaBroadcast/bin:/mnt/c/Program Files/Razer/ChromaBroadcast/bin:/mnt/d/soft_install_dir/Miniconda3:/mnt/d/soft_install_dir/Miniconda3/Library/mingw-w64/bin:/mnt/d/soft_install_dir/Miniconda3/Library/usr/bin:/mnt/d/soft_install_dir/Miniconda3/Library/bin:/mnt/d/soft_install_dir/Miniconda3/Scripts:/mnt/d/Users/73885/AppData/Local/Programs/Python/Python39/Scripts:/mnt/d/Users/73885/AppData/Local/Programs/Python/Python39:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/d/soft_install_dir/Git/cmd:/mnt/d/soft_install_dir/xshell7:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0:/mnt/c/WINDOWS/System32/OpenSSH:/mnt/d/soft_install_dir/MinGw/bin:/mnt/c/WINDOWS/system32/config/systemprofile/AppData/Local/Microsoft/WindowsApps:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0:/mnt/c/WINDOWS/System32/OpenSSH:/mnt/c/ProgramData/chocolatey/bin:/mnt/d/soft_install_dir/Miniconda3/envs/python2:/mnt/d/Program Files (x86)/nodejs:/mnt/c/Users/73885/.windows-build-tools/python27:/mnt/c/Users/73885/.cargo/bin:/mnt/c/Users/73885/AppData/Local/Microsoft/WindowsApps:/mnt/d/soft_install_dir/PyCharm Community Edition 2021.2.1/bin:/mnt/c/Users/73885/AppData/Roaming/npm:/mnt/c/Users/73885/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/73885/AppData/Local/Microsoft/WindowsApps
+PATH = /home/timo/.vscode-server/bin/6d9b74a70ca9c7733b29f0456fd8195364076dda/bin/remote-cli:/home/timo/miniconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python310/Scripts/:/mnt/c/Python310/:/mnt/c/Program Files (x86)/Razer Chroma SDK/bin:/mnt/c/Program Files/Razer Chroma SDK/bin:/mnt/c/Program Files (x86)/Razer/ChromaBroadcast/bin:/mnt/c/Program Files/Razer/ChromaBroadcast/bin:/mnt/d/soft_install_dir/Miniconda3:/mnt/d/soft_install_dir/Miniconda3/Library/mingw-w64/bin:/mnt/d/soft_install_dir/Miniconda3/Library/usr/bin:/mnt/d/soft_install_dir/Miniconda3/Library/bin:/mnt/d/soft_install_dir/Miniconda3/Scripts:/mnt/d/Users/73885/AppData/Local/Programs/Python/Python39/Scripts/:/mnt/d/Users/73885/AppData/Local/Programs/Python/Python39/:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/d/soft_install_dir/Git/cmd:/mnt/d/soft_install_dir/xshell7/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/d/soft_install_dir/MinGw/bin:/mnt/c/WINDOWS/system32/config/systemprofile/AppData/Local/Microsoft/WindowsApps:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/ProgramData/chocolatey/bin:/mnt/d/soft_install_dir/Miniconda3/envs/python2:/mnt/d/Program Files (x86)/nodejs/:/mnt/c/Program Files/dotnet/:/mnt/c/Users/73885/.windows-build-tools/python27/:/mnt/c/Users/73885/.cargo/bin:/mnt/c/Users/73885/AppData/Local/Microsoft/WindowsApps:/mnt/d/soft_install_dir/PyCharm Community Edition 2021.2.1/bin:/mnt/c/Users/73885/AppData/Roaming/npm:/mnt/c/Users/73885/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/73885/AppData/Local/Microsoft/WindowsApps
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
@@ -54,6 +54,8 @@ XDG_RUNTIME_DIR = /mnt/wslg/runtime-dir
 CONDA_PREFIX = /home/timo/miniconda3
 # environment
 ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_SERVER_TAR = /mnt/c/Users/73885/AppData/Local/Temp/vscode-remote-wsl/6d9b74a70ca9c7733b29f0456fd8195364076dda/vscode-server-stable-linux-x64.tar.gz
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -69,13 +71,13 @@ WSL2_GUI_APPS_ENABLED = 1
 # environment
 PWD = /mnt/d/project/git/opengl-learn
 # environment
-VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-c9dee209-0ff5-4478-a8ad-59cb81075ccf.sock
+VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-5186f96a-480e-4602-82b9-dac250cc2cd9.sock
 # environment
 WSL_INTEROP = /run/WSL/8_interop
 # environment
 PULSE_SERVER = /mnt/wslg/PulseServer
 # environment
-WT_SESSION = 5d999ecc-a6dc-4afb-90eb-28c0d50b97cf
+WT_SESSION = 1d76d22b-2709-41af-9546-d7e1ee3f8c47
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
@@ -101,7 +103,7 @@ MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
 # environment
-CONDA_SHLVL = 1
+CONDA_SHLVL = 0
 # environment
 SHLVL = 1
 # default
@@ -175,7 +177,7 @@ WSL_DISTRO_NAME = Ubuntu-18.04
 # environment
 _CE_CONDA = 
 # variable set hash-table stats:
-# Load=81/1024=8%, Rehash=0, Collisions=5/103=5%
+# Load=82/1024=8%, Rehash=0, Collisions=5/104=5%
 
 # Pattern-specific Variable Values
 
@@ -183,9 +185,9 @@ _CE_CONDA =
 
 # Directories
 
-# . (device 73, inode 562949953434509): 11 files, no impossibilities.
+# . (device 75, inode 562949953434509): 12 files, no impossibilities.
 
-# 11 files, no impossibilities in 1 directories.
+# 12 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -235,12 +237,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 19 / storage = 186 B / avg = 9 B
-# current buf: size = 8162 B / used = 186 B / count = 19 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 20 / storage = 198 B / avg = 9 B
+# current buf: size = 8162 B / used = 198 B / count = 20 / avg = 9 B
 
-# strcache performance: lookups = 22 / hit rate = 13%
+# strcache performance: lookups = 23 / hit rate = 13%
 # hash-table stats:
-# Load=19/8192=0%, Rehash=0, Collisions=1/22=5%
-# Finished Make data base on Thu Aug  4 01:31:00 2022
+# Load=20/8192=0%, Rehash=0, Collisions=1/23=4%
+# Finished Make data base on Sun Aug 14 21:16:23 2022
 
  
